@@ -4,7 +4,7 @@
 <style>
 
   h1 {text-align: center; color:white; font-family:calibri;}
-
+  h2 {text-align: center; color:white; font-family:calibri;}
   h4 {text-align: center; color:white; font-family:calibri;}
 
 body {
@@ -51,13 +51,27 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 0px;
   text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #225;
+}
+
+.middle-content {
+   display: block;
+}
+
+.left {
+   width: 20%;
+   float: left;
+}
+
+.right {
+   width: 20%;
+   float: right;
 }
 
 </style>
@@ -67,12 +81,12 @@ li a:hover {
 
 <TITLE>Cerracrossing</TITLE>
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 
 <ul>
-  <li><a style="color:white;font-family:calibri;" href="index.html"><img src="images/cerralogo.png" alt="Home" width="20" height="20"></a></li>
-  <li><a style="color:white;font-family:calibri;" href="games.html"><b>Games</b></a></li>
-  <li><a style="color:white;font-family:calibri;" href="videos.html"><b>Videos</b></a></li>
+  <li><a style="color:white;font-family:calibri;" href="index.html"><b><img src="images/homebutton.png"></b></a></li>
+  <li><a style="color:white;font-family:calibri;" href="games.html"><b><img src="images/gamesbutton.png"></b></a></li>
+  <li><a style="color:white;font-family:calibri;" href="videos.html"><b><img src="images/videosbutton.png"></b></a></li>
 </ul>
 
 </HEAD>
@@ -80,13 +94,30 @@ li a:hover {
 
 <BODY>
 
-<h1>Welcome to the Cerracrossing website!</h1>
-<h4>You're probably here to play one of my old flash games or watch random videos. There's nothing else here anyway, sooo...</h4>
+<aside class="left">
+<p align="center"><img src="images/daanad.png"></p>
+</aside>
 
-<p align="center"><video width="640" height="480" controls autoplay muted loop>
-  <source src="videos/sitevideo.mp4" type="video/mp4">
+<aside class="right">
+<p align="center"><img src="images/daanad.png"></p>
+</aside>
+
+<div class="middle-content">
+<h1><img src="images/welcometocerracrossing.png"></h1>
+
+<p align="center"><video width="640" height="480" controls autoplay muted>
+  <source src="videos/sitevideo2.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video></p>
+
+<h4>Click <a href="VIDEOS-siteintro2.html">HERE</a> to watch the most recently uploaded video to the site!</h4>
+
+<h4>---</h4>
+
+<h4><a href="https://www.youtube.com/c/Cerracrossing">My Youtube</a></h4>
+<h4><a href="https://twitter.com/Cerracrossing">My Twitter</a></h4>
+<h4>Or contact me at cerra.matthews@gmail.com!</h4>
+</div>
 
 </BODY>
 
