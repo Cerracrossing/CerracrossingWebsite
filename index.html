@@ -35,29 +35,14 @@ a:active {
   text-decoration: underline;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000;
+.row {
+  display: flex;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0px 0px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #225;
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
 }
 
 </style>
@@ -69,14 +54,6 @@ li a:hover {
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 
-<ul>
-  <li><a style="color:white;font-family:calibri;" href="index.html"><b><img src="images/homebutton.png"></b></a></li>
-  <li><a style="color:white;font-family:calibri;" href="games.html"><b><img src="images/gamesbutton.png"></b></a></li>
-  <li><a style="color:white;font-family:calibri;" href="videos.html"><b><img src="images/videosbutton.png"></b></a></li>
-  <li><a style="color:white;font-family:calibri;" href="blogs.html"><b><img src="images/blogbutton.png"></b></a></li>
-  <li><a style="color:white;font-family:calibri;" href="live.html"><b><img src="images/livebutton.png"></b></a></li>
-</ul>
-
 </HEAD>
 
 
@@ -84,16 +61,33 @@ li a:hover {
 
 <h1><img src="images/welcometocerracrossing.png"></h1>
 
-<p align="center"><video width="640" height="480" controls autoplay muted>
-  <source src="videos/sitevideo2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video></p>
+<div class="row">
 
-<h4>Click <a href="VIDEOS-15steps.html">HERE</a> to view the site's newest content!</h4>
+	<div class="column">
+	</div>
+
+	<div class="column">
+<h1>Click one of the links below to start surfing!</h1>
+<h2><a href="Games.html">Games</a></h2>
+<h2><a href="Videos.html">Videos</a></h2>
+<h2><a href="Live.html">Live</a></h2>
+<h4><a href="Smolpics.html">smolpic archive</a></h4>
+	</div>
+
+	<div class="column">
+<h1>Today's smolpic (02 august 2022)</h1>
+<h4><img src="images/smolpics/02-aug-2022.jpg"></h4>
+<h4>still ugly but i'm getting better i think</h4>
+	</div>
+
+	<div class="column">
+	</div>
+
+</div>
 
 <h4>---</h4>
 
-<h4><a href="https://www.youtube.com/c/Cerracrossing">My Youtube</a> || <a href="https://twitter.com/Cerracrossing">My Twitter</a> || <a href="https://discord.gg/a5GSdX6Jfs">Website Discord</a></h4>
+<h4><a href="https://www.youtube.com/c/Cerracrossing">My Youtube</a> || <a href="https://twitter.com/Cerracrossing">My Twitter</a></h4>
 <h4>Or contact me at cerra.matthews@gmail.com!</h4>
 
 </BODY>
